@@ -52,6 +52,8 @@ class BankAccount{
             cin>>balance;
             in<<"Balance: "<<balance<<"\n";
             in.close();
+            cout<<"-----------------"<<endl;
+            cout<<"You account number is: "<<account_number<<endl;
         }
 };
 
