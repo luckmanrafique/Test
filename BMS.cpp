@@ -54,12 +54,21 @@ class BankAccount{
             in.close();
             cout<<"-----------------"<<endl;
             cout<<"You account number is: "<<account_number<<endl;
+            cout<<endl;
         }
 };
-
+void display_menu(){
+    cout<<"1. Register new account."<<endl;
+}
 int main()
 {
     BankAccount acc;
-    acc.input_details();
+    display_menu();
+    int choice;
+    cin>>choice;
+    if(choice==1){
+        cin.ignore();
+        acc.input_details();
+    }
     return 0;
 }
