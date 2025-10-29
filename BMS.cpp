@@ -81,11 +81,13 @@ void display_menu() {
 int main() {
     BankAccount acc;
     display_menu();
-    int choice;
-    cin >> choice;
-    if (choice == 1) {
-        cin.ignore();
-        acc.input_details();
-    }
+    acc.input_details();
+    //cout<<"Please enter a number between 1 and 8."<<endl;
+    // int choice;
+    // cin >> choice;
+    // if (choice == 1) {
+    //     cin.ignore();
+    //     acc.input_details();
+    // }
     return 0;
 }
